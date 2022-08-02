@@ -1,23 +1,25 @@
-import React from "react";
+// import React, { Fragment } from "react";
+// import Layout from "./Layout";
+// import { Link } from "react-router-dom";
+import LandingPage from "./LandingPage";
+import FlagPage from "./FlagPage";
 import Layout from "./Layout";
-import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
-import axios from "axios";
 
 const FirstPage = () => {
-  const [country, setCountry] = useState('');
-  const [] = useState();
-
-
-  useEffect(() => {
-    axios.get(`https://restcountries.com/v3.1/all`).then((response) => {
-      console.log(response.data);
-    });
-  }, []);
-
   
-  https: return (
-    <Layout>
+
+  return (
+    <Layout heading="COUNTRY QUIZ">
+      <LandingPage />
+      <FlagPage />
+    </Layout>
+  );
+};
+
+export default FirstPage;
+
+{
+  /* <Layout>
       <h1 className="font-[1100]">COUNTRY QUIZ</h1>
       <div className="land">
         <section>
@@ -35,8 +37,5 @@ const FirstPage = () => {
           </section>
         </div>
       </div>
-    </Layout>
-  );
-};
-
-export default FirstPage;
+    </Layout> */
+}

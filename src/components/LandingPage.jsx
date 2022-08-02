@@ -1,42 +1,62 @@
-import React from 'react'
-import Layout from "./Layout";
-// import { Routes,Route } from 'react-router-dom';
+import React from "react";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 const LandingPage = () => {
+  const [country, setCountry] = useState();
+  
 
+  useEffect(() => {
+    getCapital()
+  }, []);
+ 
 
+  
+  console.log(country);
+  // console.log(country && country[Math.floor(Math.random() * 251)].capital);
+  const getCapital = () => {
+      axios.get("https://restcountries.com/v3.1/all").then((response) => {
+        setCountry(response.data);
+      });
+  };
+  
 
   return (
-    <Layout>
-      <h1>Select an answer</h1>
-      <div className="land">
-        <section>
+    <div>
+      <div className="landline">
+        <section className="ansec">
           <img src="/undraw_adventure_4hum 1.svg" alt="" />
         </section>
-        <div>
-          <p>Kuala Lumpur is the capital of</p>
-          <section>
-            <span>A</span>
-            <span>Vietnam</span>
+        <section className="para1 lone">
+          <p>
+           
+            {country && country[Math.floor(Math.random() * 251)].capital} is the
+            capital of ?
+          </p>
+        </section>
+        <div className="all1">
+          <section className="secLand">
+            <span className="tops1">A</span>
+            <span className="tops2">Vietnam</span>
           </section>
-          <section>
-            <span>B</span>
-            <span>Malaysia</span>
+          <section className="secland2">
+            <span className="tops1">B</span>
+            <span className="tops2">Malaysia</span>
           </section>
-          <section>
-            <span>C</span>
-            <span>Sweden</span>
+          <section className="secland3">
+            <span className="tops1">C</span>
+            <span className="tops2">Sweden</span>
           </section>
-          <section>
-            <span>D</span>
-            <span>Austria</span>
+
+          <section className="secland4">
+            <span className="tops1">D</span>
+            <span className="tops2">Austria</span>
           </section>
-          <Link to="/answerPage">To answer Page</Link>
         </div>
       </div>
-    </Layout>
+    </div>
   );
-}
+};
 
-export default LandingPage
+export default LandingPage;

@@ -2,37 +2,43 @@ import React from 'react'
 import Layout from "./Layout";
 import { Link } from 'react-router-dom';
 // import { Routes, Route } from "react-router-dom";
-
+import LineIcon from "react-lineicons";
 const AnswerPage = () => {
   return (
     <Layout>
-      <h1>My answer is correct or incorrect?</h1>
+      <h1 className="fist">COUNTRY QUIZ</h1>
       <div className="land">
-        <section>
+        <section className="ansec">
           <img src="/undraw_adventure_4hum 1.svg" alt="" />
         </section>
-        <div>
-          <p>Kuala Lumpur is the capital of</p>
-          <section>
-            <span>A</span>
-            <span>Vietnam</span>
+        <p className="para1 lone">Kuala Lumpur is the capital of</p>
+        <div className="all1">
+          <section className="sec1">
+            <span className="tops1">A</span>
+            <span className="tops2">Vietnam</span>
+            <span className="tops3">
+              <LineIcon name="cross-circle" />
+            </span>
           </section>
-          <section>
-            <span>B</span>
-            <span>Malaysia</span>
+          <section className="sec2">
+            <span className="tops1">B</span>
+            <span className="tops2">Malaysia</span>
+            <span className="tops3">
+              <LineIcon name="checkmark-circle" />
+            </span>
           </section>
-          <section>
-            <span>C</span>
-            <span>Sweden</span>
+          <section className="sec3">
+            <span className="tops1">C</span>
+            <span className="tops2">Sweden</span>
           </section>
-          <section>
-            <span>D</span>
-            <span>Austria</span>
+          <section className="sec4">
+            <span className="tops1">D</span>
+            <span className="tops2">Austria</span>
           </section>
-          <button>
-            <Link to="/resultpage">Next</Link>
-          </button>
         </div>
+        <button className="buta">
+          <Link to="/resultpage">Next</Link>
+        </button>
       </div>
     </Layout>
   );

@@ -1,38 +1,204 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-
-.Layout {
+.layout {
   background: url("./assets/background.png");
-   background-size: cover
+  background-size: cover;
 }
 
-@layer base{
-  h1{
-    @apply text-4xl text-white font-poppins weiNew;
-},
-h2{
-  @apply text-2xl text-rose-500
-}
-}
-
-@layer components{
-.Layout{
-  @apply grid w-screen h-screen place-content-center; 
-}
-.land{
-  @apply grid grid-cols-1 grid-rows-4 bg-white h-98 w-98 mt-7 rounded-3xl;
-}
-}
-
-@layer components{
-  .weiNew{
-    @apply weight
+@layer base {
+  h1 {
+    @apply text-4xl text-white font-poppins font-extrabold;
+  }
+  h2 {
+    @apply text-2xl text-white font-bold font-poppins;
+  }
+  h3 {
+    @apply text-xl text-white font-bold font-poppins;
   }
 }
 
- 
+@layer components {
+  .layout {
+    @apply w-screen h-screen relative;
+  }
+  .land {
+    @apply grid grid-cols-1 grid-rows-2 bg-white h-98 w-98 mt-7 rounded-3xl absolute top-40 place-self-center;
+  }
+  .landa {
+    @apply grid grid-cols-1 grid-rows-4 bg-white h-98 w-98  rounded-3xl absolute top-48  place-self-center;
+  }
+
+  .childa {
+    @apply grid lg:grid-cols-2  content-evenly;
+  }
+  .marg {
+    @apply absolute top-28 text-lightWhite ml-44 left-52;
+  }
+  .para {
+    @apply text-darkerBlue text-lg font-poppins not-italic;
+  }
+  .spa {
+    @apply text-lightGreen text-4xl font-bold;
+  }
+
+  .con {
+    @apply font-black text-5xl font-poppins not-italic leading-11 absolute bottom-60 right-44;
+  }
+
+  .eighteen {
+    @apply text-lg not-italic font-semibold;
+  }
+
+  .fisr {
+    @apply bg-transparent border-2 border-darkerBlue hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-darkerBlue rounded-lg px-20 py-3.5 absolute bottom-14 right-36;
+  }
+
+  .four {
+    @apply absolute bottom-48 right-36;
+  }
+
+  .image3 {
+    @apply absolute top-14 right-36;
+  }
+  .fist {
+    @apply absolute top-32 right-13 text-lightWhite text-4xl font-extra-black;
+  }
+
+  .ansec {
+    @apply absolute right-0 -top-20;
+  }
+
+  /* SEction for RED OR GREEN BACKGROUND */
+  .para1 {
+    @apply relative top-20 -right-24 text-darkerBlue text-xl font-extrabold font-poppins not-italic leading-9;
+  }
+
+  .all1 {
+    @apply grid grid-cols-1 grid-rows-4 absolute border-solid top-36 place-self-center w-5/6 h-3/5;
+  }
+
+  .lone {
+    @apply absolute  top-20 left-10 text-xl;
+  }
+
+  .buta {
+    @apply absolute bottom-10 right-10 focus:outline-none font-poppins font-bold text-white text-lg bg-myYellow not-italic rounded-xl py-4 px-9;
+  }
+
+  .sec1 {
+    @apply absolute top-0 w-full h-14 bg-lightRed rounded-xl text-white font-extrabold font-poppins text-lg not-italic grid grid-rows-1 grid-cols-3 items-center;
+  }
+
+  .sec2 {
+    @apply absolute top-24 w-full h-14 bg-newLightGreen text-white rounded-xl font-poppins font-extrabold text-lg not-italic grid grid-rows-1 grid-cols-3 items-center;
+  }
+
+  .sec3 {
+    @apply absolute w-full h-14 top-48 rounded-xl font-poppins text-lg not-italic items-center text-myIndigo border-2 border-myIndigo;
+  }
+
+  .sec4 {
+    @apply absolute bottom-7 w-full h-14  rounded-xl font-poppins text-lg not-italic items-center text-myIndigo border-2 border-myIndigo;
+  }
+
+  .tops1 {
+    @apply absolute top-3 left-5 font-poppins not-italic font-semibold text-2xl;
+  }
+  .tops2 {
+    @apply absolute right-64 top-3 font-poppins not-italic font-medium;
+  }
+
+  .tops3 {
+    @apply absolute right-4 top-3 font-poppins not-italic font-extrabold text-2xl;
+  }
+
+  /* SECTION TWIN COMPONENT */
+  .back {
+    @apply absolute left-11 top-40;
+  }
+
+  .secFlag {
+    @apply absolute top-0 w-full h-14 bg-myYellow rounded-xl text-white font-extrabold font-poppins text-lg not-italic grid grid-rows-1 grid-cols-3 items-center;
+  }
+
+  .sec3flag {
+    @apply absolute top-28 mt-2 w-full h-14 text-white rounded-xl font-poppins font-extrabold text-lg not-italic grid grid-rows-1 grid-cols-3 items-center text-myIndigo border-2 border-myIndigo;
+  }
+
+  .landflag {
+    @apply grid grid-cols-1 grid-rows-2 bg-white h-99 w-98 mt-7 ml-16 rounded-3xl absolute top-40;
+  }
+  .secFlag1 {
+    @apply absolute top-7 w-full h-14 rounded-xl text-white font-extrabold font-poppins text-lg not-italic grid grid-rows-1 grid-cols-3 items-center text-myIndigo border-2 border-myIndigo;
+  }
+
+  .sec3f {
+    @apply absolute w-full h-14 top-52 mt-1 rounded-xl font-poppins text-lg not-italic items-center text-myIndigo border-2 border-myIndigo;
+  }
+
+  .sec4f {
+    @apply absolute bottom-8 w-full h-14  rounded-xl font-poppins text-lg not-italic items-center text-myIndigo border-2 border-myIndigo;
+  }
+
+  .all1f {
+    @apply grid grid-cols-1 grid-rows-4 absolute border-solid top-56 place-self-center w-5/6 h-3/5;
+  }
+
+  .secLand {
+    @apply absolute top-3 w-full h-14 bg-myYellow text-white rounded-xl font-poppins font-extrabold text-lg not-italic grid grid-rows-1 grid-cols-3 items-center;
+  }
+
+  .secland2 {
+    @apply absolute top-24 mt-3 w-full h-14 text-white rounded-xl font-poppins font-extrabold text-lg not-italic grid grid-rows-1 grid-cols-3 items-center text-myIndigo border-2 border-myIndigo;
+  }
+
+  .secland3 {
+    @apply absolute w-full h-14 top-48 mt-3   rounded-xl font-poppins text-lg not-italic items-center text-myIndigo border-2 border-myIndigo;
+  }
+
+  .secland4 {
+    @apply absolute bottom-3  w-full h-14  rounded-xl font-poppins text-lg not-italic items-center text-myIndigo border-2 border-myIndigo;
+  }
+
+  .landline {
+    @apply absolute left-96 grid grid-cols-1 grid-rows-2 bg-white h-98 w-98 mt-7 rounded-3xl top-40;
+  }
+
+  .flagra{
+    @apply absolute w-24 h-16 top-16 left-12 drop-shadow-3xl
+  }
+}
+
+@media (max-width: 1021) {
+  .Layout {
+    grid-template-columns: none;
+  }
+}
+
+@layer utilities {
+  .m-98 {
+    margin-left: 60rem;
+  }
+  .leading-11 {
+    line-height: 72px;
+  }
+  .font-rash {
+    font-weight: 1900;
+  }
+  .right-13 {
+    right: 50%;
+  }
+  .h-5 {
+    height: 1.6875rem;
+  }
+  .w-12 {
+    width: 2.6875rem;
+  }
+  .font-bigger {
+    fontweight: 1000;
+  }
+}

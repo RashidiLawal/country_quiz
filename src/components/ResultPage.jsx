@@ -5,21 +5,24 @@ import Layout from "./Layout";
 const ResultPage = () => {
   return (
     <Layout>
-      <div className="land">
-        <div>
+      <h1 className="fist">COUNTRY QUIZ</h1>
+      <div className="landa">
+        <div className="image3">
           <img src="/undraw_winners_ao2o 2.svg" alt="" />
-          <section>
-            <p>Results</p>
-          </section>
-          <section>
-            <p>
-              You got <span>4</span> correct answers
-            </p>
-          </section>
-          <section>
-            <button></button>
-          </section>
         </div>
+        <section>
+          <p className="para con">Results</p>
+        </section>
+        <section>
+          <p className="para eighteen four">
+            You got <span className="spa">4</span> correct answers
+          </p>
+        </section>
+        <section>
+          <button className="para eighteen fisr" type="button">
+            Try again
+          </button>
+        </section>
       </div>
     </Layout>
   );
