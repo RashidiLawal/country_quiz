@@ -17,7 +17,7 @@
     @apply text-2xl text-white font-bold font-poppins;
   }
   h3 {
-    @apply text-xl text-white font-bold font-poppins;
+    @apply absolute text-xl text-white font-bold font-poppins -top-9;
   }
 }
 
@@ -90,19 +90,19 @@
   }
 
   .sec1 {
-    @apply absolute top-0 w-full h-14 bg-lightRed rounded-xl text-white font-extrabold font-poppins text-lg not-italic grid grid-rows-1 grid-cols-3 items-center;
+    @apply absolute top-0 w-full h-14 bg-lightRed rounded-xl text-white font-extrabold font-poppins text-lg not-italic grid grid-rows-1 grid-cols-3 items-center cursor-pointer ;
   }
 
   .sec2 {
-    @apply absolute top-24 w-full h-14 bg-newLightGreen text-white rounded-xl font-poppins font-extrabold text-lg not-italic grid grid-rows-1 grid-cols-3 items-center;
+    @apply absolute top-24 w-full h-14 bg-newLightGreen text-white rounded-xl font-poppins font-extrabold text-lg not-italic grid grid-rows-1 grid-cols-3 items-center cursor-pointer ;
   }
 
   .sec3 {
-    @apply absolute w-full h-14 top-48 rounded-xl font-poppins text-lg not-italic items-center text-myIndigo border-2 border-myIndigo;
+    @apply absolute w-full h-14 top-48 rounded-xl font-poppins text-lg not-italic items-center text-myIndigo border-2 border-myIndigo cursor-pointer;
   }
 
   .sec4 {
-    @apply absolute bottom-7 w-full h-14  rounded-xl font-poppins text-lg not-italic items-center text-myIndigo border-2 border-myIndigo;
+    @apply absolute bottom-7 w-full h-14  rounded-xl font-poppins text-lg not-italic items-center text-myIndigo border-2 border-myIndigo cursor-pointer;
   }
 
   .tops1 {
@@ -126,22 +126,22 @@
   }
 
   .sec3flag {
-    @apply absolute top-28 mt-2 w-full h-14 text-white rounded-xl font-poppins font-extrabold text-lg not-italic grid grid-rows-1 grid-cols-3 items-center text-myIndigo border-2 border-myIndigo;
+    @apply absolute top-28 mt-2 w-full h-14 text-white rounded-xl font-poppins font-extrabold text-lg not-italic grid grid-rows-1 grid-cols-3 items-center text-myIndigo border-2 border-myIndigo hover:bg-myYellow cursor-pointer hover:border-none;
   }
 
   .landflag {
     @apply grid grid-cols-1 grid-rows-2 bg-white h-99 w-98 mt-7 ml-16 rounded-3xl absolute top-40;
   }
   .secFlag1 {
-    @apply absolute top-7 w-full h-14 rounded-xl text-white font-extrabold font-poppins text-lg not-italic grid grid-rows-1 grid-cols-3 items-center text-myIndigo border-2 border-myIndigo;
+    @apply absolute top-7 w-full h-14 rounded-xl text-white font-extrabold font-poppins text-lg not-italic grid grid-rows-1 grid-cols-3 items-center text-myIndigo border-2 border-myIndigo hover:bg-myYellow cursor-pointer hover:border-none;
   }
 
   .sec3f {
-    @apply absolute w-full h-14 top-52 mt-1 rounded-xl font-poppins text-lg not-italic items-center text-myIndigo border-2 border-myIndigo;
+    @apply absolute w-full h-14 top-52 mt-1 rounded-xl font-poppins text-lg not-italic items-center text-myIndigo border-2 border-myIndigo hover:bg-myYellow cursor-pointer hover:border-none;
   }
 
   .sec4f {
-    @apply absolute bottom-8 w-full h-14  rounded-xl font-poppins text-lg not-italic items-center text-myIndigo border-2 border-myIndigo;
+    @apply absolute bottom-8 w-full h-14  rounded-xl font-poppins text-lg not-italic items-center text-myIndigo border-2 border-myIndigo hover:bg-myYellow cursor-pointer hover:border-none;
   }
 
   .all1f {
@@ -149,19 +149,19 @@
   }
 
   .secLand {
-    @apply absolute top-3 w-full h-14 bg-myYellow text-white rounded-xl font-poppins font-extrabold text-lg not-italic grid grid-rows-1 grid-cols-3 items-center;
+    @apply absolute top-3 w-full h-14 hover:bg-myYellow text-myIndigo rounded-xl font-poppins font-extrabold text-lg not-italic grid grid-rows-1 grid-cols-3 items-center border-2 border-myIndigo cursor-pointer hover:border-none;
   }
 
   .secland2 {
-    @apply absolute top-24 mt-3 w-full h-14 text-white rounded-xl font-poppins font-extrabold text-lg not-italic grid grid-rows-1 grid-cols-3 items-center text-myIndigo border-2 border-myIndigo;
+    @apply absolute top-24 mt-3 w-full h-14 text-white rounded-xl font-poppins font-extrabold text-lg not-italic grid grid-rows-1 grid-cols-3 items-center text-myIndigo border-2 border-myIndigo hover:bg-myYellow cursor-pointer hover:border-none;
   }
 
   .secland3 {
-    @apply absolute w-full h-14 top-48 mt-3   rounded-xl font-poppins text-lg not-italic items-center text-myIndigo border-2 border-myIndigo;
+    @apply absolute w-full h-14 top-48 mt-3   rounded-xl font-poppins text-lg not-italic items-center text-myIndigo border-2 border-myIndigo hover:bg-myYellow cursor-pointer hover:border-none;
   }
 
   .secland4 {
-    @apply absolute bottom-3  w-full h-14  rounded-xl font-poppins text-lg not-italic items-center text-myIndigo border-2 border-myIndigo;
+    @apply absolute bottom-3  w-full h-14  rounded-xl font-poppins text-lg not-italic items-center text-myIndigo border-2 border-myIndigo hover:bg-myYellow cursor-pointer hover:border-none;
   }
 
   .landline {

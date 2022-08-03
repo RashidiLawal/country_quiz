@@ -6,7 +6,7 @@ const ResultPage = () => {
   return (
     <Layout>
       <h1 className="fist">COUNTRY QUIZ</h1>
-      <div className="landa">
+      <div className="landa"> 
         <div className="image3">
           <img src="/undraw_winners_ao2o 2.svg" alt="" />
         </div>
