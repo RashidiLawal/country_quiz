@@ -16,10 +16,11 @@ const LandingPage = () => {
 
   
   const countryInfo = quizez["questions"][0].question;
-  const countryInfo2 = countryInfo["options"];
   console.log(countryInfo);
   
-
+  
+const countryInfo2 = quizez["questions"][0]["options"];
+console.log(countryInfo2[0]);
   // const getCapital = () => {
   //   axios.get("https://restcountries.com/v3.1/all").then((response) => {
   //     setCountry(response.data);
@@ -44,20 +45,20 @@ const LandingPage = () => {
         <div className="all1">
           <section className="secLand">
             <span className="tops1">A</span>
-            {/* <span className="tops2">{countryInfo["options"][0]}</span> */}
+            <span className="tops2">{countryInfo2[0]}</span>
           </section>
           <section className="secland2">
             <span className="tops1">B</span>
-            {/* <span className="tops2">{countryInfo["options"][1]}</span> */}
+            <span className="tops2">{countryInfo2[1]}</span>
           </section>
           <section className="secland3">
             <span className="tops1">C</span>
-            {/* <span className="tops2">{countryInfo["options"][2]}</span> */}
+            <span className="tops2">{countryInfo2[2]}</span>
           </section>
 
           <section className="secland4">
             <span className="tops1">D</span>
-            {/* <span className="tops2">{countryInfo["options"][3]}</span> */}
+            <span className="tops2">{countryInfo2[3]}</span>
           </section>
         </div>
       </div>
