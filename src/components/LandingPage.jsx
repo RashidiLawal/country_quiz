@@ -53,12 +53,12 @@ console.log(countryInfo2[0]);
           </section>
           <section className="secland3">
             <span className="tops1">C</span>
-            <span className="tops2">{countryInfo2[2]}</span>
+            <span className="tops2 topla">{countryInfo2[2]}</span>
           </section>
 
           <section className="secland4">
             <span className="tops1">D</span>
-            <span className="tops2">{countryInfo2[3]}</span>
+            <span className="tops2 topla">{countryInfo2[3]}</span>
           </section>
         </div>
       </div>

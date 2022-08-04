@@ -82,7 +82,7 @@
   }
 
   .lone {
-    @apply absolute  top-20 left-10 text-xl;
+    @apply absolute  top-20 left-10 text-xl w-max;
   }
 
   .buta {
@@ -109,7 +109,11 @@
     @apply absolute top-3 left-5 font-poppins not-italic font-semibold text-2xl;
   }
   .tops2 {
-    @apply absolute right-64 top-3 font-poppins not-italic font-medium;
+    @apply font-poppins not-italic font-medium w-max static ml-16;
+  }
+
+  .topla {
+    @apply mt-3 static flex flex-wrap;
   }
 
   .tops3 {
@@ -118,7 +122,11 @@
 
   /* SECTION TWIN COMPONENT */
   .back {
-    @apply absolute left-11 top-40;
+    @apply absolute left-11 top-40 w-max;
+  }
+
+  .liner {
+    @apply w-max
   }
 
   .secFlag {

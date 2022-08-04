@@ -42,6 +42,7 @@ module.exports = {
       },
       width: {
         98: "32rem",
+        
       },
       dropShadow: {
         "3xl": "0px 4px 24px rgba(0, 0, 0, 0.1)",

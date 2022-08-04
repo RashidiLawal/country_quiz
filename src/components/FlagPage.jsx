@@ -55,8 +55,8 @@ const FlagPage = () => {
           <img src="/undraw_adventure_4hum 1.svg" alt="" />
         </section>
         <ul className="para1 back">
-          <li>which country does this flag</li>
-          <li>belong to ?</li>
+          <li className="liner">which country does this flag</li>
+          <li className="liner">belong to ?</li>
         </ul>
         <div className="all1f">
           <section className="secFlag1">
@@ -69,11 +69,11 @@ const FlagPage = () => {
           </section>
           <section className="sec3f">
             <span className="tops1">C</span>
-            <span className="tops2">Sweden</span>
+            <span className="tops2 topla">Sweden</span>
           </section>
           <section className="sec4f">
             <span className="tops1">D</span>
-            <span className="tops2">Austria</span>
+            <span className="tops2 topla">Austria</span>
           </section>
         </div>
       </div>
