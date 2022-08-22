@@ -1,8 +1,9 @@
 // import React, { Fragment } from "react";
 // import Layout from "./Layout";
 // import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 import LandingPage from "./LandingPage";
-import FlagPage from "./FlagPage";
+import Presentation from "./Presentation";
 import Layout from "./Layout";
 
 const FirstPage = () => {
@@ -11,7 +12,7 @@ const FirstPage = () => {
   return (
     <Layout heading="COUNTRY QUIZ">
       <LandingPage />
-      <FlagPage />
+      <Presentation />
     </Layout>
   );
 };

@@ -4,10 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.layout {
-  background: url("./assets/background.png");
-  background-size: cover;
-}
 
 @layer base {
   h1 {
@@ -23,13 +19,17 @@
 
 @layer components {
   .layout {
-    @apply w-screen h-screen relative;
+    @apply w-screen  h-screen mx-auto;
   }
+  .backer {
+    @apply bg-cover w-screen  h-screen absolute left-0 right-0 top-0 bottom-0 m-auto;
+  }
+
   .land {
     @apply grid grid-cols-1 grid-rows-2 bg-white h-98 w-98 mt-7 rounded-3xl absolute top-40 place-self-center;
   }
   .landa {
-    @apply grid grid-cols-1 grid-rows-4 bg-white h-98 w-98  rounded-3xl absolute top-48  place-self-center;
+    @apply grid grid-cols-1 grid-rows-4 bg-white  h-98 w-98  rounded-3xl absolute top-48  place-self-center;
   }
 
   .childa {
@@ -90,11 +90,11 @@
   }
 
   .sec1 {
-    @apply absolute top-0 w-full h-14 bg-lightRed rounded-xl text-white font-extrabold font-poppins text-lg not-italic grid grid-rows-1 grid-cols-3 items-center cursor-pointer ;
+    @apply absolute top-0 w-full h-14 bg-lightRed rounded-xl text-white font-extrabold font-poppins text-lg not-italic grid grid-rows-1 grid-cols-3 items-center cursor-pointer;
   }
 
   .sec2 {
-    @apply absolute top-24 w-full h-14 bg-newLightGreen text-white rounded-xl font-poppins font-extrabold text-lg not-italic grid grid-rows-1 grid-cols-3 items-center cursor-pointer ;
+    @apply absolute top-24 w-full h-14 bg-newLightGreen text-white rounded-xl font-poppins font-extrabold text-lg not-italic grid grid-rows-1 grid-cols-3 items-center cursor-pointer;
   }
 
   .sec3 {
@@ -126,7 +126,7 @@
   }
 
   .liner {
-    @apply w-max
+    @apply w-max;
   }
 
   .secFlag {
@@ -176,8 +176,8 @@
     @apply absolute left-96 grid grid-cols-1 grid-rows-2 bg-white h-98 w-98 mt-7 rounded-3xl top-40;
   }
 
-  .flagra{
-    @apply absolute w-24 h-16 top-16 left-12 drop-shadow-3xl
+  .flagra {
+    @apply absolute w-24 h-16 top-16 left-12 drop-shadow-3xl;
   }
 }
 
